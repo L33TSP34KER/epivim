@@ -23,7 +23,7 @@
 ## Installation
 
 1. Copy the provided configuration into your `~/.vimrc` file. 📂✍️
-2. Create a directory for your snippets at `/home/morgan/.vim/snippets/`. 📁
+2. Create a directory for your snippets at `$HOME/.vim/snippets/`. 📁
 3. Add your snippets (e.g., `epitech_header.c`, `main.c`) to the snippets directory. 📄➡️📁
 
 ## Usage
