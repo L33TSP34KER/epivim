@@ -32,10 +32,6 @@ set showcmd
 set path+=**
 command! MakeTags !ctags -R .
 "nnoremap <C-]> gd
-nnoremap <C-]> gd
-" autocmd BufWritePost *.c :!ctags -R .
-" autocmd BufWritePost *.cpp :!ctags -R .
-
 
 " FILE BROWSING
 let g:netrw_banner=0
@@ -45,5 +41,15 @@ let g:netrw_liststyle=3
 
 
 " SNIPPER MANAGER
-nnoremap ih gg:-1read $HOME/.vim/snippets/epitech_header.c<CR>jjw**cw
-nnoremap ,main gg:-1read $HOME/.vim/snippets/main.c<CR>jjjo
+nnoremap ih gg:-1read /home/morgan/.vim/snippets/epitech_header.c<CR>jjw**cw
+nnoremap ,main gg:-1read /home/morgan/.vim/snippets/main.c<CR>jjjo
+
+
+" mapping
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+nnoremap <C-]> gd
+autocmd BufWritePost *.c :!ctags -R .
+autocmd BufWritePost *.cpp :!ctags -R .
